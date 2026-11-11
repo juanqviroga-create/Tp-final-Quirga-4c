@@ -1,12 +1,9 @@
-/* Estilos generales con un fondo verde pastel suave */
 body {
-    background-color: #d8f3dc; /* Fondo general verde claro */
+    background-color: #d8f3dc; 
     color: #1b4332;
     font-family: Arial, sans-serif;
     margin: 20px;
 }
-
-/* Encabezado principal en verde oscuro */
 header {
     background-color: #2d6a4f;
     text-align: center;
@@ -14,10 +11,9 @@ header {
 }
 
 header h1 {
-    color: white; /* Título principal en blanco sobre fondo verde oscuro */
+    color: white; 
 }
 
-/* Navegación clásica con fondo verde claro */
 nav {
     background-color: #b7e4c7; 
     padding: 10px;
@@ -36,19 +32,17 @@ nav li {
 }
 
 nav a {
-    color: #1b4332; /* Enlaces en verde oscuro */
+    color: #1b4332; 
     font-weight: bold;
     text-decoration: underline;
 }
 
-/* Contenido principal con un fondo verde marfil (nada de blanco) */
 main {
     background-color: #f1faee; 
     padding: 20px;
     border: 1px solid #2d6a4f;
 }
 
-/* Títulos en verde oscuro */
 h1 {
     color: #2d6a4f;
 }
@@ -73,8 +67,8 @@ p {
     color: #1b4332;
 }
 
-/* Tarjetas o recuadros de contenido con fondo verde suave */
-.card {
+
+div{
     background-color: #c8e6c9;
     border-left: 4px solid #2d6a4f;
     border-top: 1px solid #a3d9a5;
@@ -84,7 +78,6 @@ p {
     margin-bottom: 15px;
 }
 
-/* Pie de página en verde oscuro */
 footer {
     background-color: #2d6a4f;
     color: white;
