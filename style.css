@@ -1,143 +1,73 @@
-/* ==========================================================================
-   IMPORTACIÓN DE FUENTES FUTURISTAS (Google Fonts)
-   ========================================================================== */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap');
-
-/* ==========================================================================
-   VARIABLES GLOBALES (PALETA CYBER-GAMING 2026)
-   ========================================================================== */
-:root {
-    --bg-dark: #07090f;
-    --bg-surface: rgba(15, 21, 38, 0.72);
-    --bg-card: rgba(22, 31, 56, 0.65);
-    --neon-cyan: #00f3ff;
-    --neon-purple: #b026ff;
-    --neon-pink: #ff007f;
-    --text-main: #e2e8f0;
-    --text-muted: #94a3b8;
-    --border-glow: rgba(0, 243, 255, 0.25);
-    --font-display: 'Orbitron', sans-serif;
-    --font-body: 'Rajdhani', sans-serif;
-}
-
-/* ==========================================================================
-   RESET Y FONDO ANIMADO CON CUADRÍCULA TECNOLÓGICA
-   ========================================================================== */
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    scroll-behavior: smooth;
-    scrollbar-width: thin;
-    scrollbar-color: var(--neon-cyan) var(--bg-dark);
-}
-
-/* Barra de scroll personalizada (Chrome, Edge, Safari) */
-::-webkit-scrollbar {
-    width: 10px;
-}
-::-webkit-scrollbar-track {
-    background: var(--bg-dark);
-}
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, var(--neon-cyan), var(--neon-purple));
-    border-radius: 5px;
-}
-
 body {
-    font-family: var(--font-body);
-    background-color: var(--bg-dark);
-    color: var(--text-main);
-    font-size: 1.15rem;
-    line-height: 1.7;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-    /* Fondo con cuadrícula cibernética y resplandores ambientales */
-    background-image: 
-        radial-gradient(circle at 15% 15%, rgba(176, 38, 255, 0.14) 0%, transparent 40%),
-        radial-gradient(circle at 85% 75%, rgba(0, 243, 255, 0.12) 0%, transparent 45%),
-        linear-gradient(rgba(0, 243, 255, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 243, 255, 0.03) 1px, transparent 1px);
-    background-size: 100% 100%, 100% 100%, 40px 40px, 40px 40px;
-    background-attachment: fixed;
+    background-color: #d8f3dc; 
+    color: #1b4332;
+    font-family: Arial, sans-serif;
+    margin: 20px;
 }
-
-/* ==========================================================================
-   ENCABEZADO PRINCIPAL (HEADER)
-   ========================================================================== */
 header {
-    position: relative;
-    padding: 3.5rem 1.5rem 2.5rem;
+    background-color: #2d6a4f;
     text-align: center;
-    background: linear-gradient(180deg, rgba(11, 15, 29, 0.95) 0%, rgba(7, 9, 15, 0.4) 100%);
-    border-bottom: 1px solid var(--border-glow);
-    overflow: hidden;
-}
-
-/* Línea de escaneo láser animada en el header */
-header::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, var(--neon-cyan), var(--neon-purple), transparent);
-    animation: scanline 4s linear infinite;
-}
-
-@keyframes scanline {
-    0% { left: -100%; }
-    100% { left: 100%; }
+    padding: 15px;
 }
 
 header h1 {
-    font-family: var(--font-display);
-    font-size: clamp(2rem, 5vw, 3.4rem);
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    background: linear-gradient(90deg, #ffffff 0%, var(--neon-cyan) 50%, var(--neon-purple) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0 0 18px rgba(0, 243, 255, 0.35));
-    animation: fadeInDown 0.8s ease-out;
+    color: white; 
 }
 
-/* ==========================================================================
-   BARRA DE NAVEGACIÓN FLOTANTE (NAV)
-   ========================================================================== */
 nav {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: rgba(9, 13, 24, 0.85);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    border-bottom: 1px solid rgba(176, 38, 255, 0.3);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-    padding: 0.8rem 1rem;
+    background-color: #b7e4c7; 
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    max-width: 1100px;
-    margin: 0 auto;
+    margin-left: 20px;
 }
 
-nav a {
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-    font-family: var(--font-display);
-    font-size: 0.88
+nav li {
+    margin-bottom: 5px;
+}
+main {
+    background-color: #f1faee; 
+    padding: 20px;
+}
+
+h1 {
+    color: #2d6a4f;
+}
+
+h2 {
+    color: #2d6a4f;
+    border-bottom: 2px solid #2d6a4f;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #2d6a4f;
+}
+
+h4 {
+    color: #2d6a4f;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #1b4332;
+}
+
+
+div{
+    background-color: #c8e6c9;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #2d6a4f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
